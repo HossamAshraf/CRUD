@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container py-5">
+      <h1 class="text-center">CRUD Operations</h1>
+
+      <label for="pn">ProductName</label>
+      <input id="pn" type="text" class="form-control mb-3" />
+
+      <label for="pp">Product price</label>
+      <input id="pp" type="text" class="form-control mb-3" />
+
+      <label for="pc">Product category</label>
+      <input id="pc" type="text" class="form-control mb-3" />
+
+      <label for="pd">Product Description</label>
+      <textarea name="" class="form-control mb-3" id="pd"></textarea>
+
+      <button
+        onclick="addNewElement()"
+        id="addBtn"
+        class="btn btn-outline-info me-3"
+      >
+        Add
+      </button>
+
+      <input
+        type="text"
+        onkeyup="search()"
+        class="form-control my-4"
+        id="search"
+        placeholder="Search..."
+      />
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Delete</th>
+            <th>Update</th>
+          </tr>
+        </thead>
+
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/index.js"></script>
+  </body>
+</html>
